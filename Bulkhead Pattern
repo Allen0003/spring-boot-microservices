@@ -1,0 +1,22 @@
+
+https://medium.com/geekculture/bulkhead-pattern-microservice-design-pattern-9e30d414a0fd
+
+
+
+@Service
+public class PlayerStatsClientService {
+	private final RestTemplate restTemplate = new RestTemplate();
+
+	@Value("${stats.service.endpoint}")
+	private String statsService;
+
+	@Bulkhead(name = "statsService", fallbackMethod = "getDefaultStats")
+	public String getProductRatingDto(int playerId){
+		return this.restTemplate.getForEntity(this.statsService, String.class, playerId)
+		                        .getBody();
+	}
+
+	public String getDefaultStats(int playerId, Throwable throwable){
+		return "Default";
+	}
+}
