@@ -2,7 +2,7 @@ Microservice patterns
 
 1. The Database-per-Service pattern
 
-2. The API Composition pattern
+2. The API Composition pattern -> i. Gateway Routing pattern ii. Gateway Aggregation pattern iii. Gateway offloading pattern
 
 3. The CQRS pattern 
 
