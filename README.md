@@ -4,7 +4,7 @@ Microservice patterns
 
 2. The API Composition pattern -> i. Gateway Routing pattern ii. Gateway Aggregation pattern iii. Gateway offloading pattern
 
-3. The CQRS pattern 
+3. The Command Query Responsibility Segregation (CQRS) pattern  write-less
 
 4. The Event Sourcing pattern
 
