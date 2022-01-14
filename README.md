@@ -11,3 +11,11 @@ Microservice patterns
 5. The Saga pattern
 
 6. The Shared Database anti-pattern
+
+
+
+Transactions in microservices
+
+1. Two-phase commit (synchronous)
+
+2. Event-based communication (asynchronous)
