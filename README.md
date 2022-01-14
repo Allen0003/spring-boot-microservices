@@ -18,4 +18,7 @@ Transactions in microservices
 
 1. Two-phase commit (synchronous)
 
-2. Event-based communication (asynchronous)
+2. Event-based communication (asynchronous) 
+
+  i. Choreographed approach
+  ii. Orchestrated approach
